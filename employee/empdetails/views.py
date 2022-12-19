@@ -37,3 +37,6 @@ def raman(request):
         scientist = Raman(id='1',name=name, details = details)
         scientist.save()
     return render(request, 'cvraman.html',context)
+
+def finish(request):
+    return render(request,'finish.html')

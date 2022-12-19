@@ -9,7 +9,8 @@
 {% endfor %}
 <div class="update">
   <button class="submit" id="edit">Edit</button>
-  <button class="submit">Submit</button>
+  <a href="#popup1" class="submit">Submit</a>
+  <a href="finish" class="submit">Finish</a>
 </div>
 <div id="editPage" class="modal">
   <div class="modal-content">
@@ -31,5 +32,15 @@
       </div>
     </form>
   </div>
+</div>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Thank You</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			Your Application has been submitted
+		</div>
+	</div>
 </div>
 {% endblock %}
